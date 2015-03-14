@@ -20,7 +20,10 @@ class TextareaAutosizeAsset extends AssetBundle
     {
         $js = <<<SCRIPT
 !(function ($) {
-    autosize($('textarea'));
+    // FIX: @see http://www.jacklmoore.com/autosize/#faq-hidden
+    $('body').delegate('textarea', 'focus', function () {
+        autosize($(this));
+    });
 })(window.jQuery);
 SCRIPT;
         Yii::$app->view->registerJs($js, \yii\web\View::POS_READY);
