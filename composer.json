@@ -1,7 +1,7 @@
 {
     "name": "uran1980/yii2-textarea-autosize",
     "description": "An Yii2 Textarea Autosize extension based on Autosize javascript library.",
-    "version": "0.0.1",
+    "version": "0.0.2",
     "type": "yii2-extension",
     "keywords": [
         "yii2-textarea-autosize",
@@ -25,7 +25,8 @@
         "source": "https://github.com/uran1980/yii2-textarea-autosize"
     },
     "require": {
-        "yiisoft/yii2": "~2"
+        "yiisoft/yii2": "~2",
+        "bower-asset/autosize": "*"
     },
     "autoload": {
         "psr-4": {
