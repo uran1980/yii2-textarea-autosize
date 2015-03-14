@@ -2,6 +2,7 @@
 
 namespace uran1980\yii\assets;
 
+use Yii;
 use yii\web\AssetBundle;
 
 class TextareaAutosizeAsset extends AssetBundle
