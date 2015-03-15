@@ -3,9 +3,8 @@
 namespace uran1980\yii\assets;
 
 use Yii;
-use yii\web\AssetBundle;
 
-class TextareaAutosizeAsset extends AssetBundle
+class TextareaAutosizeAsset extends \yii\web\AssetBundle
 {
     public $sourcePath = '@bower/autosize/dest';
     public $js = [
@@ -27,5 +26,7 @@ class TextareaAutosizeAsset extends AssetBundle
 })(window.jQuery);
 SCRIPT;
         Yii::$app->view->registerJs($js, \yii\web\View::POS_READY);
+
+        parent::init();
     }
 }
