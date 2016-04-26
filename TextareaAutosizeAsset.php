@@ -6,7 +6,7 @@ use Yii;
 
 class TextareaAutosizeAsset extends \yii\web\AssetBundle
 {
-    public $sourcePath = '@bower/autosize/dest';
+    public $sourcePath = '@bower/autosize/dist';
     public $js = [
         'autosize.min.js',
     ];
